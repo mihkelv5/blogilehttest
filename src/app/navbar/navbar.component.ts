@@ -1,0 +1,28 @@
+import {Component, OnInit, Output} from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
+import {LoginPopupComponent} from "../login-popup/login-popup.component";
+
+@Component({
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
+})
+export class NavbarComponent implements OnInit {
+  opened: boolean = true;
+
+  constructor(private dialogRef: MatDialog) {
+
+  }
+
+  openDialog(){
+    this.dialogRef.open(LoginPopupComponent);
+  }
+
+  ngOnInit(): void {
+  }
+
+  public togglesidebar(){
+
+  }
+
+}

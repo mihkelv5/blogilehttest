@@ -1,0 +1,40 @@
+
+
+<mat-sidenav-container class="sidebar-container" autosize (backdropClick)="toggleMenu()">
+  <mat-sidenav #sidenav mode="push" [(opened)]="opened" [autoFocus]="false">
+      <div class="sidebar">
+        <h3 class="sidebar-header">
+          <a class="sidebar-headline">Postitused</a>
+        </h3>
+        <ul>
+          <li *ngFor="let p of posts"><a (click)="scrollToElement('post'+(p.id).toString())" class="sidebar-post-headline">{{p.headline}}</a></li>
+        </ul>
+
+      </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content id="main-page">
+    <div class="main-page-content">
+        <div>
+          <div class="sidebar-icon-container" (click)="toggleMenu()">
+            <div class="sidebar-icon-button">
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-icon"></div>
+            </div>
+
+          </div>
+          <h1 class="main-page-headline">
+            Postitused
+          </h1>
+        </div>
+          <div>
+            <app-post *ngFor="let p of posts" [post]="p" [postService]="postService" id="post{{p.id}}" ></app-post>
+          </div>
+      </div>
+
+
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

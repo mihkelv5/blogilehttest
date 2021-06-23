@@ -1,0 +1,25 @@
+<div class="post">
+  <div>
+    <img src="{{post.imgUrl}}" class="img-thumbnail">
+    <button class="btn-delete" (click)="deletePost(post)">Kustuta</button>
+  </div>
+  <h3 class="post-headline">{{post?.headline}}</h3>
+  <div>
+    <p class="post-text">
+      {{post.text}}
+    </p>
+    <a href="#" class="btn-read-more">Ava postitus</a>
+    <ul class="likes-dislikes">
+      <li>
+        <input type="image" src="assets/pictures/thumbs%20up.png" class="img-thumbs" (click)="like(post)" alt=""/>
+        {{post.likes}}
+      </li>
+      <li>
+        <input type="image" src="assets/pictures/thumbs%20down.png" class="img-thumbs" (click)="dislike(post)" alt=""/>
+        {{post.dislikes}}
+      </li>
+
+    </ul>
+  </div>
+</div>
+

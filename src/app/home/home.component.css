@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, serif;
+  color: black;
+}
+
+.main-page-content {
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+.main-page-headline {
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  font-weight: lighter;
+
+}
+
+.sidebar {
+  width: 15%;
+  height: 100%;
+  background: #042331;
+  position: fixed;
+  font-size: 1.5vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.sidebar-container {
+  position: relative;
+  top: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  background-color: white;
+}
+
+.sidebar-header {
+
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.sidebar-headline {
+  color: #bdbd9f;
+}
+
+.sidebar-post-headline {
+  color: white;
+  padding: 5%;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px;
+  transition: 0.4s;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+}
+
+.sidebar-post-headline:hover {
+  padding-left: 10%;
+  cursor: pointer;
+}
+
+/* Removes scrollbar from sidebar while maintaining ability to scroll */
+::-webkit-scrollbar{
+  display: none;
+}
+
+.sidebar-icon-container {
+  margin-top: 5px;
+  padding: 0.2em 0.4em;
+  margin-left: 1.5em;
+  width: 35px;
+  position: fixed;
+}
+
+.sidebar-icon-container:hover {
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.sidebar-icon {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
