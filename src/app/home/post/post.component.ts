@@ -34,6 +34,7 @@ export class PostComponent implements OnInit {
   deletePost(post: Post): void{
     if(confirm("Kas Sa oled kindel, et soovid kustutada postitust : " +post.headline  + " ?"
      + "\n(ei tööta hardcoded postituste puhul)")){
+
       this.postService.deletePost(post.id).subscribe();
       window.location.reload();
     }

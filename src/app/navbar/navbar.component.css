@@ -19,14 +19,13 @@
   height: 5%;
   overflow: hidden;
   position: fixed;
-
-
 }
-
 .navbar ul {
-  margin: 0;
-  vertical-align: middle;
   top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+
 
 }
 
@@ -53,9 +52,8 @@
 .btn-login {
   float: right;
   margin-right: 2em;
+  margin-top: 1px;
   cursor: pointer;
-
-
   background-color: antiquewhite;
   border: none;
   color: blue;
@@ -66,3 +64,6 @@
   font-size: 1.2em;
   border-radius: 1em;
 }
+
+
+

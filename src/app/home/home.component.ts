@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit {
     this.postService.getHardCodedPosts().subscribe((response) => {
       this.posts = this.posts.concat(response)
     })
-
   }
 
 
